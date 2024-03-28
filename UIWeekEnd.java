@@ -28,8 +28,15 @@ class AppWeekEnd {
     public void menu() {
 	boolean commande_faite = false;
 	while(!commande_faite) {
-	    System.out.println("Que voulez vous faire?");
-	    System.out.println("Q: quitter");
+		System.out.println("╭─────────────────────╮");
+		System.out.println("│ Menu Principale     │");
+		System.out.println("|─────────────────────|");
+		System.out.println("│ Q: quitter          │");
+		System.out.println("│ D: Menu dépenses    │");
+		System.out.println("│ P: Menu personnes   │");
+		System.out.println("│ T: Total dépenses   │");
+		System.out.println("│ M: Moyenne dépenses │");
+		System.out.println("╰─────────────────────╯");
 	    String commande_brute = System.console().readLine();
 	    String commande = commande_brute.strip().toLowerCase();
 	    if(commande.equals("q")) {
@@ -69,3 +76,4 @@ class AppWeekEnd {
     }
 
 }
+
